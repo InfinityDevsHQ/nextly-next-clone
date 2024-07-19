@@ -1,21 +1,11 @@
-"use client"
-import Image from "next/image"
-import { useState } from "react"
-import { useEffect } from "react"
+"use client";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import { useState } from "react";
 
 function Navbar() {
-  const [darkMode, setDarkMode] = useState(false)
-  const [isShow, setIsShow] = useState(false)
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark")
-      document.documentElement.style.colorScheme = "dark"
-    } else {
-      document.documentElement.classList.remove("dark")
-      document.documentElement.style.colorScheme = "light"
-    }
-  }, [darkMode])
+  const { theme, setTheme } = useTheme();
+  const [isShow, setIsShow] = useState(false);
 
   return (
     <div className="w-full">
@@ -71,11 +61,13 @@ function Navbar() {
           <div className="flex items-center lg:hidden ml-1">
             <button
               className="text-gray-300 rounded-full outline-none focus:outline-none"
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() => {
+                theme === "light" ? setTheme("dark") : setTheme("light");
+              }}
             >
               <span className="sr-only">Light Mode</span>
 
-              {!darkMode ? (
+              {theme === "light" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -205,11 +197,13 @@ function Navbar() {
           <div className="flex items-center">
             <button
               className="text-gray-300 rounded-full outline-none focus:outline-none"
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() =>
+                theme === "light" ? setTheme("dark") : setTheme("light")
+              }
             >
               <span className="sr-only">Light Mode</span>
 
-              {!darkMode ? (
+              {theme === "light" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -239,7 +233,7 @@ function Navbar() {
         </div>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

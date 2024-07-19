@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/general/Navbar";
 import Footer from "./components/general/Footer";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="max-w-7xl mx-auto">
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
-      </body>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <body className={inter.className}>
+          <main className="max-w-7xl mx-auto">
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
