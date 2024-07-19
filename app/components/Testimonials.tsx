@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { TestimonialCardProps } from "@/types/prop-types";
 import TestimonialCard from "./general/testimonials-card";
+import SectionHeader from "./general/section-header";
 
 function Testimonials() {
   const Reviews: TestimonialCardProps[] = [
@@ -49,18 +50,12 @@ function Testimonials() {
   ];
   return (
     <>
-      <div className="container p-4 md:p-8 lg:p-12 mx-auto xl:px-0 flex w-full flex-col mt-4 items-center justify-center text-center">
-        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
-          Testimonials
-        </div>
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-          Here is what our customers said
-        </h2>
-        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-          Testimonials is a great way to increase the brand trust and awareness.
-          Use this section to highlight your popular customers.
-        </p>
-      </div>
+      <SectionHeader
+        subheading="Testimonials"
+        mainHeading="Here is what our customers said"
+        description="Testimonials is a great way to increase the brand trust and awareness.
+          Use this section to highlight your popular customers."
+      />
       <div className="container p-4 md:p-8 lg:p-12 mx-auto xl:px-0 ">
         <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
           {Reviews.map((review, index) => (
