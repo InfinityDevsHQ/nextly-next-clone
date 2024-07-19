@@ -1,5 +1,5 @@
 import Link from "next/link";
-function cta() {
+export default function Cta() {
   return (
     <div className="container p-2 sm:p-4 md:p-8 lg:p-12 mx-auto ">
       <div className="flex flex-wrap items-center justify-between w-full max-w-4xl gap-5 mx-auto text-white bg-indigo-600 px-4 py-4 md:px-7 md:py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
@@ -25,5 +25,3 @@ function cta() {
     </div>
   );
 }
-
-export default cta;
