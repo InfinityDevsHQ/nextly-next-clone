@@ -1,10 +1,9 @@
 "use client";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useState } from "react";
+import ModesToggler from "./modes-toggler";
 
 function Navbar() {
-  const { theme, setTheme } = useTheme();
   const [isShow, setIsShow] = useState(false);
 
   return (
@@ -58,43 +57,7 @@ function Navbar() {
             )}
           </button>
           {/* Mobile Darkmode */}
-          <div className="flex items-center lg:hidden ml-1">
-            <button
-              className="text-gray-300 rounded-full outline-none focus:outline-none"
-              onClick={() => {
-                theme === "light" ? setTheme("dark") : setTheme("light");
-              }}
-            >
-              <span className="sr-only">Light Mode</span>
-
-              {theme === "light" ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="gray"
-                  className="w-5 h-5 "
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  className="w-5 h-5 "
-                  width="20"
-                  height="20"
-                  stroke="yellow"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
-                </svg>
-              )}
-            </button>
-          </div>
+          <ModesToggler />
           {/* Mobile Nav */}
           <div
             className={`flex flex-wrap w-full my-5 lg:hidden ${
@@ -194,42 +157,7 @@ function Navbar() {
           >
             Get Started
           </a>
-          <div className="flex items-center">
-            <button
-              className="text-gray-300 rounded-full outline-none focus:outline-none"
-              onClick={() =>
-                theme === "light" ? setTheme("dark") : setTheme("light")
-              }
-            >
-              <span className="sr-only">Light Mode</span>
-
-              {theme === "light" ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="gray"
-                  className="w-5 h-5 "
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  width="24"
-                  height="24"
-                  stroke="yellow"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
-                </svg>
-              )}
-            </button>
-          </div>
+          <ModesToggler />
         </div>
       </nav>
     </div>
