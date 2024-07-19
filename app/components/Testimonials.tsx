@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TestimonialCardProps } from "@/types/prop-types";
-import TestimonialCard from "./testimonials-card";
+import TestimonialCard from "./general/testimonials-card";
 
 function Testimonials() {
   const Reviews: TestimonialCardProps[] = [
