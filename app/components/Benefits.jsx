@@ -1,4 +1,4 @@
-function Benefits() {
+export default function Benefits() {
   return (
     <div className="container p-4 md:p-8 lg:p-12 mx-auto xl:px-0 flex w-full flex-col mt-4 items-center justify-center text-center">
       <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
@@ -14,7 +14,5 @@ function Benefits() {
         And its completely open-source.
       </p>
     </div>
-  )
+  );
 }
-
-export default Benefits
