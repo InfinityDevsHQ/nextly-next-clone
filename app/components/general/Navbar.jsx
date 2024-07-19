@@ -34,7 +34,7 @@ function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+            className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden font-bold hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-gray-700"
             onClick={() => setIsShow(!isShow)}
           >
             {isShow ? (
@@ -63,7 +63,7 @@ function Navbar() {
             )}
           </button>
           {/* Mobile Darkmode */}
-          <ModesToggler />
+          <ModesToggler className="lg:hidden ml-1" />
           {/* Mobile Nav */}
           <div
             className={`flex flex-wrap w-full my-5 lg:hidden ${
