@@ -20,3 +20,17 @@ export const NavLinks: NavLink[] = [
     link: "#",
   },
 ];
+export const LegalLinks: LegalLinks[] = [
+  {
+    name: "Terms",
+    link: "#",
+  },
+  {
+    name: "Privacy",
+    link: "#",
+  },
+  {
+    name: "Legal",
+    link: "#",
+  },
+];

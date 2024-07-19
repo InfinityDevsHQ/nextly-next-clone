@@ -1,4 +1,4 @@
-import { NavLinks } from "@/constants";
+import { LegalLinks, NavLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 function Footer() {
@@ -58,24 +58,15 @@ function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Terms
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Privacy
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Legal
-              </a>
+              {LegalLinks.map((link, index) => (
+                <Link
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  key={index}
+                  href={link.link}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </div>
           <div>
