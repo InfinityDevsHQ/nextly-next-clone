@@ -6,3 +6,8 @@ export type TestimonialCardProps = {
   reviewerPost: string;
   reviewerImageUrl: string;
 };
+export type SectionHeaderProps = {
+  subheading: string;
+  mainHeading: string;
+  description: string;
+};
