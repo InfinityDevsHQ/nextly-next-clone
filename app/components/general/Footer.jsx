@@ -1,5 +1,6 @@
-import Image from "next/image"
-
+import { NavLinks } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 function Footer() {
   return (
     <div className="relative">
@@ -44,36 +45,15 @@ function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Product
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Features
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Pricing
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Company
-              </a>
-              <a
-                className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                href="/"
-              >
-                Blog
-              </a>
+              {NavLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  href={link.link}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
           </div>
           <div>
@@ -189,7 +169,7 @@ function Footer() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
