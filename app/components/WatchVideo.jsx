@@ -1,19 +1,15 @@
+import SectionHeader from "./general/section-header";
+
 function WatchVideo() {
   return (
     <>
-      <div className="container p-4 md:p-8 lg:p-12 mx-auto xl:px-0 flex w-full flex-col mt-4 items-center justify-center text-center">
-        <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
-          Watch a video
-        </div>
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-          Learn how to fullfil your needs
-        </h2>
-        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-          This section is to highlight a promo or demo video of your product.
+      <SectionHeader
+        subheading="Watch a video"
+        mainHeading="Learn how to fullfil your needs"
+        description="This section is to highlight a promo or demo video of your product.
           Analysts says a landing page with video has 3% more conversion rate.
-          So, dont forget to add one. Just like this.
-        </p>
-      </div>
+          So, don't forget to add one. Just like this."
+      />
       <div className="container p-4 md:p-8 lg:p-12 mx-auto xl:px-0 ">
         <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-indigo-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-indigo-700">
           <button className="absolute inset-auto w-16 h-16 text-white transform -translate-x-1/2 -translate-y-1/2 lg:w-28 lg:h-28 top-1/2 left-1/2">
@@ -34,7 +30,7 @@ function WatchVideo() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default WatchVideo
+export default WatchVideo;
