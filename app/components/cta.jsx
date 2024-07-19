@@ -8,6 +8,7 @@ export default function Cta() {
             Ready to try-out this template?
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
+            {/* We user &apos; for apostropy in nextjs */}
             Don&apos;t let your visitors see a poor landing.
           </p>
         </div>
