@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NavLinks } from "@/constants";
 import ModesToggler from "./modes-toggler";
 import MenuSvg from "../svgs/icons/menu-svg";
+import XSvg from "../svgs/icons/x-svg";
 export default function MobileHeader() {
   const [isShow, setIsShow] = useState(false);
   return (
@@ -16,20 +17,7 @@ export default function MobileHeader() {
         onClick={() => setIsShow(!isShow)}
       >
         <span className="sr-only">Navbar open and close toggle</span>
-        {isShow ? (
-          <MenuSvg />
-        ) : (
-          <svg
-            className="w-6 h-6 fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fillRule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-            ></path>
-          </svg>
-        )}
+        {isShow ? <MenuSvg /> : <XSvg />}
       </button>
       {/* Mobile Darkmode */}
       <ModesToggler className="lg:hidden ml-1" />
