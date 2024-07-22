@@ -104,7 +104,7 @@ function Faq() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Faq
+export default Faq;
