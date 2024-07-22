@@ -28,7 +28,7 @@ function Footer() {
               TailwindCSS. And it’s completely open-source.
             </div>
             <div className="mt-5">
-              <a
+              <Link
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Footer() {
                   height="44"
                   src="/poweredvercel.svg"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div>

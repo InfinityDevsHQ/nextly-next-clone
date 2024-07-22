@@ -1,12 +1,12 @@
-import Hero from "./components/Hero";
-import Trusted from "./components/Trusted";
+import Hero from "./components/hero";
+import Trusted from "./components/trusted";
 import Benefits from "./components/Benefits";
-import Highlight1 from "./components/Highlight";
-import Highlight2 from "./components/Highlight2";
+import Highlight1 from "./components/highlight";
+import Highlight2 from "./components/highlight2";
 import Testimonials from "./components/Testimonials";
-import Faq from "./components/Faq";
+import Faq from "./components/faq";
+import WatchVideo from "./components/watch-video";
 import Cta from "./components/cta";
-import WatchVideo from "./components/WatchVideo";
 
 export default function Home() {
   return (
