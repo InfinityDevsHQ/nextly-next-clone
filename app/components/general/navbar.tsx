@@ -5,7 +5,7 @@ import MobileHeader from "./mobile-header";
 
 function Navbar() {
   return (
-    <div className="w-full">
+    <header className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-4 lg:p-6 mx-auto lg:justify-between xl:px-0">
         <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
           {/* Logo */}
@@ -56,7 +56,7 @@ function Navbar() {
           <ModesToggler />
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
