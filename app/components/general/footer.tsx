@@ -1,10 +1,10 @@
 import { LegalLinks, NavLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import TwitterSvg from "../svgs/twitter-svg";
-import FacebookSvg from "../svgs/facebook-svg";
-import InstagramSvg from "../svgs/instagram-svg";
-import LinkedinSvg from "../svgs/linkedin-svg";
+import TwitterSvg from "../svgs/icons/twitter-svg";
+import FacebookSvg from "../svgs/icons/facebook-svg";
+import InstagramSvg from "../svgs/icons/instagram-svg";
+import LinkedinSvg from "../svgs/icons/linkedin-svg";
 function Footer() {
   return (
     <div className="relative">

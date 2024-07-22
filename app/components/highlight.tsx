@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SmileEmojiSvg from "./svgs/smile-emoji-svg";
-import SignalSvg from "./svgs/signals-svg";
-import BlinkingCursorSvg from "./svgs/blinking-cursor-svg";
+import SmileEmojiSvg from "./svgs/icons/smile-emoji-svg";
+import SignalSvg from "./svgs/icons/signals-svg";
+import BlinkingCursorSvg from "./svgs/icons/blinking-cursor-svg";
 
 function Highlight() {
   return (

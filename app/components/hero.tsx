@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import GithubSvg from "./svgs/github-svg";
+import GithubSvg from "./svgs/icons/github-svg";
 
 function Hero() {
   return (

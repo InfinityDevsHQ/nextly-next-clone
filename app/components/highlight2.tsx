@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SmartPhoneSvg from "./svgs/smart-phone-svg";
-import DottedMenuSvg from "./svgs/doted-menu-svg";
-import SunSvg from "./svgs/sun-svg";
+import SmartPhoneSvg from "./svgs/icons/smart-phone-svg";
+import DottedMenuSvg from "./svgs/icons/doted-menu-svg";
+import SunSvg from "./svgs/icons/sun-svg";
 
 function Highlight2() {
   return (

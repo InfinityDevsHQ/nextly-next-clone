@@ -1,5 +1,5 @@
 import { FAQQuiz } from "@/constants";
-import ChevUpSvg from "./svgs/chev-up-svg";
+import ChevUpSvg from "./svgs/icons/chev-up-svg";
 
 export default function Faq() {
   return (
