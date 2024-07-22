@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { NavLinks } from "@/constants";
 import ModesToggler from "./modes-toggler";
+import MenuSvg from "../svgs/icons/menu-svg";
 export default function MobileHeader() {
   const [isShow, setIsShow] = useState(false);
   return (
@@ -16,17 +17,7 @@ export default function MobileHeader() {
       >
         <span className="sr-only">Navbar open and close toggle</span>
         {isShow ? (
-          <svg
-            className="w-6 h-6 fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-            ></path>
-          </svg>
+          <MenuSvg />
         ) : (
           <svg
             className="w-6 h-6 fill-current"
