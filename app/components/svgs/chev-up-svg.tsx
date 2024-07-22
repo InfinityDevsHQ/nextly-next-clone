@@ -1,4 +1,4 @@
-export default function ChevUp() {
+export default function ChevUpSvg() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

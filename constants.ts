@@ -34,3 +34,25 @@ export const LegalLinks: LegalLinks[] = [
     link: "#",
   },
 ];
+export const FAQQuiz: FAQQuizType[] = [
+  {
+    question: "Can I use it in a commercial project?",
+    answer: "",
+    id: 1,
+  },
+  {
+    question: "What is your refund policy?",
+    answer: "",
+    id: 2,
+  },
+  {
+    question: "Do you offer technical support?",
+    answer: "",
+    id: 2,
+  },
+  {
+    question: "Is this template completely free to use?",
+    answer: "",
+    id: 3,
+  },
+];
