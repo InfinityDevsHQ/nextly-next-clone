@@ -1,4 +1,6 @@
-import Image from "next/image"
+import Image from "next/image";
+import SmileEmojiSvg from "./svgs/smile-emoji-svg";
+import SignalSvg from "./svgs/signals-svg";
 
 function Highlight() {
   return (
@@ -29,20 +31,7 @@ function Highlight() {
           <div className="w-full mt-5">
             <div className="flex items-start mt-8 space-x-3">
               <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                  className="w-7 h-7 text-indigo-50"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+                <SmileEmojiSvg />
               </div>
               <div>
                 <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
@@ -55,20 +44,7 @@ function Highlight() {
             </div>
             <div className="flex items-start mt-8 space-x-3">
               <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                  className="w-7 h-7 text-indigo-50"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+                <SignalSvg />
               </div>
               <div>
                 <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
@@ -109,7 +85,7 @@ function Highlight() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Highlight
+export default Highlight;
