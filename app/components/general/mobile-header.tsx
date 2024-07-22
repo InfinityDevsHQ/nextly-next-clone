@@ -9,6 +9,8 @@ export default function MobileHeader() {
     <>
       {/* Mobile menu button */}
       <button
+        aria-label="Navbar open and close toggle"
+        type="button"
         className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden font-bold hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-gray-700"
         onClick={() => setIsShow(!isShow)}
       >
