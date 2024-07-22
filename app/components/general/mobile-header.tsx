@@ -12,6 +12,7 @@ export default function MobileHeader() {
         className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden font-bold hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-gray-700"
         onClick={() => setIsShow(!isShow)}
       >
+        <span className="sr-only">Navbar open and close toggle</span>
         {isShow ? (
           <svg
             className="w-6 h-6 fill-current"
