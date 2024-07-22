@@ -31,7 +31,7 @@ function Highlight2() {
           </div>
           <div className="w-full mt-5">
             <div className="flex items-start mt-8 space-x-3">
-              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11">
+              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md size-11">
                 <SmartPhoneSvg />
               </div>
               <div>
@@ -44,7 +44,7 @@ function Highlight2() {
               </div>
             </div>
             <div className="flex items-start mt-8 space-x-3">
-              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11">
+              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md size-11">
                 <DottedMenuSvg />
               </div>
               <div>
@@ -57,7 +57,7 @@ function Highlight2() {
               </div>
             </div>
             <div className="flex items-start mt-8 space-x-3">
-              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11">
+              <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md size-11">
                 <SunSvg />
               </div>
               <div>
